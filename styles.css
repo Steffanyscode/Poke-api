@@ -1,0 +1,80 @@
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #FDD835;
+    color: #fbeb0a;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #406cbf;
+}
+
+#Pokemons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem; 
+}
+
+
+.card{
+    background-color: #8854bc;
+    border-radius: 13px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* efecto de sombra brillantes */
+    transition: tranform 0.3s ease;
+    
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    /* efecto de zoom al pasar el mouse sobre la tarjeta*/
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #4DAF4E;
+    font-size: 1.5rem;
+}
+
+.card p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 13px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 12px rgba(88, 17, 17, 0.2); 
+}
+
+#updatePaginationButton{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    background-color: #406cbf;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5rem;
+}
+
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
